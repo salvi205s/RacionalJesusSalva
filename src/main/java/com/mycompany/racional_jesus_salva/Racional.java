@@ -78,5 +78,16 @@ public class Racional {
             this.b = this.b * x.b;
         }
     }
+    
+    //A. Método resta(Racional x), que operará utilizando la misma lógica que el 
+    //método suma anterior pero aplicando la resta.
+    public void resta(Racional x) {
+        if (this.b == x.b) {
+            this.a = this.a - x.a;
+        } else{
+            this.a = (this.a * x.b) - (this.b * x.a);
+            this.b = this.b * x.b;
+        }
+    }
 
 }
