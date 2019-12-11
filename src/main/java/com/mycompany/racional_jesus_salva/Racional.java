@@ -14,7 +14,6 @@ public class Racional {
     /*Un número Racional se representa por dos números enteros a/b, donde a es el numerador y b es el denominador, 
     ambos números enteros. Los objetos de tipo Racional estarán encapsulados.
      */
-
     private int a;
     private int b;
 //A. Constructor por defecto, indicando como numerador y denominador el valor 1.
@@ -23,8 +22,9 @@ public class Racional {
         this.a = 1;
         this.b = 1;
     }
-    
-    public Racional(int a, int b){
+
+    // Constructor parametrizado
+    public Racional(int a, int b) {
         this.a = a;
         this.b = b;
         if (b == 0) {
@@ -32,4 +32,14 @@ public class Racional {
             this.b = 1;
         }
     }
+
+    //Metodos getters
+    public int getA() {
+        return a;
+    }
+
+    public int getB() {
+        return b;
+    }
+
 }
