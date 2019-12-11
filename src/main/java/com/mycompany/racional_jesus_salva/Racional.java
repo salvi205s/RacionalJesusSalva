@@ -62,5 +62,12 @@ public class Racional {
 
         System.out.println("Número racional "+a+"/"+b);
     }
+    
+    //Metodo toString()
+
+    @Override
+    public String toString() {
+        return "Racional{" + "a=" + a + ", b=" + b + '}';
+    }    
 
 }
