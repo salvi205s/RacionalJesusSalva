@@ -16,7 +16,9 @@ public class AppRacional {
 //Crea dos racionales  con valores z=4/5 y k=3/4.
         Racional z=new Racional(4, 5);
         Racional k=new Racional(3, 4);
-
+        
+        //Creacion racional aleatorio
+        System.out.println(Racional.aleatorio());
         
         
     }
