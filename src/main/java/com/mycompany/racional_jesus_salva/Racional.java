@@ -60,14 +60,23 @@ public class Racional {
     //mensaje del tipo "Número racional a/b"
     public void imprimirConsola() {
 
-        System.out.println("Número racional "+a+"/"+b);
+        System.out.println("Número racional " + a + "/" + b);
     }
-    
-    //Metodo toString()
 
+    //Metodo toString()
     @Override
     public String toString() {
         return "Racional{" + "a=" + a + ", b=" + b + '}';
-    }    
+    }
+
+    //Metodo sumar
+    public void suma(Racional x) {
+        if (this.b == x.b) {
+            this.a = this.a + x.a;
+        } else{
+            this.a = (this.a * x.b) + (this.b * x.a);
+            this.b = this.b * x.b;
+        }
+    }
 
 }
