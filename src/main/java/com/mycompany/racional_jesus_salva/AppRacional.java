@@ -36,6 +36,9 @@ public class AppRacional {
         //Divide z y k
         System.out.println(Racional.division(z, k));
                 
+        //Multiplica z y k. Muestra el resultado.
+        z.producto(k);
+        System.out.println("Multiplicando\n"+z);
         
     }
 }
