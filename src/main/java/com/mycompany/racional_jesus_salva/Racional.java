@@ -23,4 +23,13 @@ public class Racional {
         this.a = 1;
         this.b = 1;
     }
+    
+    public Racional(int a, int b){
+        this.a = a;
+        this.b = b;
+        if (b == 0) {
+            System.out.println("El denominador no puede ser 0, se le ha asignado el valor 1");
+            this.b = 1;
+        }
+    }
 }
