@@ -5,6 +5,8 @@
  */
 package com.mycompany.racional_jesus_salva;
 
+import java.util.Random;
+
 /**
  *
  * @author salva
@@ -101,14 +103,20 @@ public class Racional {
 //de realizar la división de x entre y. Para ello se multiplica la primera fracción por la segunda 
 //fracción invertida.
     public static Racional division(Racional x, Racional y) {
-        Racional racional;
         return new Racional(x.a * y.b, x.b * y.a);
     }
-    
+
     //Metodo comprueba igualdad
     public static boolean igualdad(Racional x, Racional y) {
         return x.a * y.b == x.b * y.a;
-        
+
     }
 
+    //A. Método de clase aleatorio(), que devuelva un número racional aleatorio, 
+    //controlando que el denominador no sea cero.
+    public static Racional aleatorio() {
+        Random aleatorio = new Random();
+
+        return new Racional(aleatorio.nextInt(20), aleatorio.nextInt(19) + 1);
+    }
 }
