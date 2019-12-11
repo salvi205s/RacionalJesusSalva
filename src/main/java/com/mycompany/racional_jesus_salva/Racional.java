@@ -102,8 +102,13 @@ public class Racional {
 //fracción invertida.
     public static Racional division(Racional x, Racional y) {
         Racional racional;
-
         return new Racional(x.a * y.b, x.b * y.a);
+    }
+    
+    //Metodo comprueba igualdad
+    public static boolean igualdad(Racional x, Racional y) {
+        return x.a * y.b == x.b * y.a;
+        
     }
 
 }
