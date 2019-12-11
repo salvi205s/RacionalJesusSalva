@@ -15,7 +15,7 @@ public class AppRacional {
                 
 //Crea dos racionales  con valores z=4/5 y k=3/4.
         Racional z=new Racional(4, 4);
-        Racional k=new Racional(4, 4);
+        Racional k=new Racional(4, 3);
         
         //Creacion racional aleatorio
         System.out.println(Racional.aleatorio());
@@ -29,5 +29,10 @@ public class AppRacional {
         //Comprueba igualdad entre z y k
         System.out.println(Racional.igualdad(z, k));
 
+        //Suma z y k. Muestra el resultado.
+        z.suma(k);
+        System.out.println("sumando\n"+z);
+                
+        
     }
 }
