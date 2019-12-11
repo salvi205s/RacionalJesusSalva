@@ -97,4 +97,13 @@ public class Racional {
 
     }
 
+//A. Método de clase division(Racional x, Racional y), que devolverá un objeto Racional con el resultado 
+//de realizar la división de x entre y. Para ello se multiplica la primera fracción por la segunda 
+//fracción invertida.
+    public static Racional division(Racional x, Racional y) {
+        Racional racional;
+
+        return new Racional(x.a * y.b, x.b * y.a);
+    }
+
 }
