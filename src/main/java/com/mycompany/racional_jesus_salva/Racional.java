@@ -73,21 +73,28 @@ public class Racional {
     public void suma(Racional x) {
         if (this.b == x.b) {
             this.a = this.a + x.a;
-        } else{
+        } else {
             this.a = (this.a * x.b) + (this.b * x.a);
             this.b = this.b * x.b;
         }
     }
-    
+
     //A. Método resta(Racional x), que operará utilizando la misma lógica que el 
     //método suma anterior pero aplicando la resta.
     public void resta(Racional x) {
         if (this.b == x.b) {
             this.a = this.a - x.a;
-        } else{
+        } else {
             this.a = (this.a * x.b) - (this.b * x.a);
             this.b = this.b * x.b;
         }
+    }
+
+    //Metodo multiplicar
+    public void producto(Racional x) {
+        this.a = this.a * x.a;
+        this.b = this.b * x.b;
+
     }
 
 }
