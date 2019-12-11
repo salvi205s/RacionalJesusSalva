@@ -42,4 +42,20 @@ public class Racional {
         return b;
     }
 
+    //A. Métodos set, teniendo en cuenta la misma restricción que existe en el constructor parametrizado.
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public void setB(int b) {
+        this.b = b;
+        if (b == 0) {
+            System.out.println("El denominador no puede ser 0, se le ha asignado el valor 1");
+            this.b = 1;
+        }
+
+    }
+
+
+
 }
