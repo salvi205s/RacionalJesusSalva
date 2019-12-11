@@ -20,6 +20,11 @@ public class AppRacional {
         //Creacion racional aleatorio
         System.out.println(Racional.aleatorio());
         
-        
+        System.out.println("-----------------------------");
+        //Imprime los tres racionales.
+        System.out.println(z);
+        System.out.println(k);
+        System.out.println(Racional.aleatorio());
+
     }
 }
