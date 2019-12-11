@@ -56,6 +56,11 @@ public class Racional {
 
     }
 
+    //A. Método imprimirConsola(), que imprimirá por consola el número racional mostrando un 
+    //mensaje del tipo "Número racional a/b"
+    public void imprimirConsola() {
 
+        System.out.println("Número racional "+a+"/"+b);
+    }
 
 }
